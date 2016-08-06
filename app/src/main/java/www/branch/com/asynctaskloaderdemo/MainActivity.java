@@ -100,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     if (progressDialog != null) {
       progressDialog.dismiss();
     }
+
+    mListApps = null;
+    mApplistAdapter.notifyDataSetChanged();
+
   }
 
   @Override
